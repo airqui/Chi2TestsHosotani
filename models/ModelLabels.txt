@@ -1,0 +1,16 @@
+Polarization: Full polarised beams
+Structure: Energy Flavour CS_eLpR AFB_eLpR CS_eRpL AFB_eRpL
+
+SMA: Standar Model using the couplings and weak mixing angle from A-Models' paper[1].
+SMB: Standar Model using the couplings and weak mixing angle from B-Models' paper[2].
+B1: Model B in [2].
+B2: Model BL in [2].
+B3: Model BH in [2].
+B4: Model B+ in [2].
+B5: Model B- in [2].
+A1: First Model in [1] (Theta_H=0.115).
+A2: Second Model in [1] (Theta_H=0.0917).
+A3: Third Model in [1] (Theta_H=0.0737).
+
+[1] arXiv:1705.05282v3 [hep-ph] 5 Oct 2017.
+[2] arXiv:2006.02157v3 [hep-ph] 27 Jun 2020.
