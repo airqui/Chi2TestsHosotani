@@ -48,13 +48,13 @@ void QQBARLabel(Double_t x,Double_t y,TString text,Color_t color)
   }
   }
 
-void QQBARLabel2(Double_t x,Double_t y,TString text,Color_t color, Double_t textsize, Double_t angle)
+void QQBARLabel2(Double_t x,Double_t y,TString text,Color_t color, Double_t textsize, Double_t angle, Double_t tfont)
 {
   
   TLatex p;
   p.SetNDC();
   p.SetTextSize(textsize);
-  p.SetTextFont(52);
+  p.SetTextFont(tfont);
   p.SetTextColor(color);
   p.SetTextAngle(angle);
   p.DrawLatex(x,y,text);

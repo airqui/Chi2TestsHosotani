@@ -31,7 +31,7 @@ struct model_struct_t
 {
     int id = -1;
     TString modelname = "";
-    model_values_struct_t model_values[5]; // up to 5 energies
+    model_values_struct_t model_values[10]; // up to 10 energies
 };
 
 std::vector<model_struct_t> theory;
@@ -132,7 +132,7 @@ float ObsAFB(int imodel, int ienergy, int iflav, float pole, float polp)
 model_struct_t read_model(TString st_model = "A1", int index = 0, bool debug = true)
 {
 
-    TString filename = "../models/Model_" + st_model + ".txt";
+    TString filename = "../models/DataModels310823_typoCorrection/Model_" + st_model + ".txt";
     std::ifstream reading_file(filename);
     if (!reading_file)
     {
@@ -165,7 +165,7 @@ model_struct_t read_model(TString st_model = "A1", int index = 0, bool debug = t
     {
 
         cout << newmodel.modelname << " index:" << newmodel.id << endl;
-        for (int ie = 0; ie < 5; ie++)
+        for (int ie = 0; ie < 10; ie++)
             for (int ifl = 1; ifl < 6; ifl++)
                 cout << newmodel.model_values[ie].energy << " " << newmodel.model_values[ie].cross_L[ifl] << " " << newmodel.model_values[ie].cross_R[ifl]
                      << " " << newmodel.model_values[ie].AFB_L[ifl] << " " << newmodel.model_values[ie].AFB_R[ifl] << endl;
